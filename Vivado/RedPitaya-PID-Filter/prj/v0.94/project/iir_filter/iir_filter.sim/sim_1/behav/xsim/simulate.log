@@ -1,0 +1,4 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+**************TEST COMPLETED (PASSED)**************
+$stop called at time : 32310 ns : File "C:/Users/Ian/Desktop/OIST/MATLAB/Filters/hdlsrc/fir_821_2_tb.v" Line 6665

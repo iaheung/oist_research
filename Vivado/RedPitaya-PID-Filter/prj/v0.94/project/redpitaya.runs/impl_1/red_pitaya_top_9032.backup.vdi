@@ -1,0 +1,1570 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Aug 21 15:14:20 2023
+# Process ID: 9032
+# Current directory: C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1
+# Command line: vivado.exe -log red_pitaya_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source red_pitaya_top.tcl -notrace
+# Log file: C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top.vdi
+# Journal file: C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source red_pitaya_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+Command: link_design -top red_pitaya_top -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/system_axi_protocol_converter_0_0.dcp' for cell 'ps/system_i/axi_protocol_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.dcp' for cell 'ps/system_i/proc_sys_reset'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.dcp' for cell 'ps/system_i/processing_system7'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.dcp' for cell 'ps/system_i/xadc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.224 . Memory (MB): peak = 1020.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1019 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0_board.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Finished Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0_board.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Finished Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.xdc] for cell 'ps/system_i/processing_system7/inst'
+Finished Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.xdc] for cell 'ps/system_i/processing_system7/inst'
+Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.xdc] for cell 'ps/system_i/xadc/inst'
+Finished Parsing XDC File [c:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.xdc] for cell 'ps/system_i/xadc/inst'
+Parsing XDC File [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:206]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:206]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:206]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:206]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1351.648 ; gain = 330.910
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_o]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:206]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:207]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:207]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2x]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:207]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:208]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:208]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2p]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:208]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_1x'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:212]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:212]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_1x]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:212]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:213]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:213]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2x]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:213]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:214]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:214]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2p]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:214]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'ser_clk'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:215]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:215]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks ser_clk]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:215]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'pdm_clk'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:216]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:216]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks pdm_clk]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:216]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:217]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:217]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:217]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:217]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:217]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:218]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:218]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:218]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:218]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc:218]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/sdc/red_pitaya.xdc]
+Parsing XDC File [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc]
+WARNING: [Vivado 12-180] No cells matched 'i_ams/XADC_inst'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_out'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:7]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:7]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_out]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:7]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'ser_clk_out'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:8]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks ser_clk_out]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_2clk_out'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:9]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_2clk_out]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'par_clk'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:11]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:11]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks par_clk]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:11]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_out'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:12]
+WARNING: [Vivado 12-627] No clocks matched 'dac_2clk_out'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_out]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_out'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:13]
+WARNING: [Vivado 12-627] No clocks matched 'dac_2ph_out'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:13]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_out]'. [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/RedPitaya-FilterTest/prj/v0.94/sdc/red_pitaya.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1351.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 38 instances
+
+36 Infos, 21 Warnings, 17 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1351.648 ; gain = 330.910
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[7] expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 8 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1351.648 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1909efacd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.949 . Memory (MB): peak = 1365.668 ; gain = 14.020
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 246f2dbbb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1567.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 5 cells and removed 38 cells
+INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1d3e0f0ba
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1567.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 56 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1c377f0c5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1567.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 203 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 2086c0850
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1567.383 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 2086c0850
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1567.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 22d7bcbf7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1567.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               5  |              38  |                                              2  |
+|  Constant propagation         |               0  |              56  |                                              0  |
+|  Sweep                        |               8  |             203  |                                              0  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1567.383 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 18fa797a4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1567.383 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for i_DNA
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 30 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 14 newly gated: 14 Total Ports: 60
+Number of Flops added for Enable Generation: 9
+
+Ending PowerOpt Patch Enables Task | Checksum: 1d4e5fabf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.198 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1d4e5fabf
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1708.191 ; gain = 140.809
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 19af12af4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 19af12af4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 19af12af4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+61 Infos, 29 Warnings, 17 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1708.191 ; gain = 356.543
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file red_pitaya_top_drc_opted.rpt -pb red_pitaya_top_drc_opted.pb -rpx red_pitaya_top_drc_opted.rpx
+Command: report_drc -file red_pitaya_top_drc_opted.rpt -pb red_pitaya_top_drc_opted.pb -rpx red_pitaya_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1724] DSP_Dbus_sign_bit_restriction: i_pid/i_pid21/int_sum: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port led_o[7] expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 9 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1538bf3c1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][10]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][11]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][12]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][13]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][14]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][15]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][2]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][3]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][4]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][5]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][6]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][7]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][8]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[0][9]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][10]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][11]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][12]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][13]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][14]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][15]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][3]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][4]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][5]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][6]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][7]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][8]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'adc_dat_i[1][9]' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 557b947e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 12cb50d96
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 12cb50d96
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 12cb50d96
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 4e52ead8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 23 LUTNM shape to break, 335 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 15, two critical 8, total 23, new lutff created 2
+INFO: [Physopt 32-775] End 1 Pass. Optimized 116 nets or cells. Created 23 new cells, deleted 93 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net ps/axi_slave_gp0/rd_do_reg_4[0] could not be optimized because driver ps/axi_slave_gp0/int_sum_i_2 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           23  |             93  |                   116  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           23  |             93  |                   116  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: fa3d0171
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 135442ed1
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 135442ed1
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1e7cf09a5
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1da6f6eaa
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 11c8e1b4c
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1741aeefb
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 12fece328
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 2326f42f5
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 191cb1e57
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1402eb16b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1e5a6de71
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1e5a6de71
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19f712642
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-69.741 | TNS=-2064.920 |
+Phase 1 Physical Synthesis Initialization | Checksum: fd70e2a9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.974 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Place 46-33] Processed net i_scope/i_dfilt1_chb/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1a8973b53
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19f712642
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-69.220. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 185fe713f
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:18 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 185fe713f
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 185fe713f
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 185fe713f
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1d8ed86fe
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d8ed86fe
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Ending Placer Task | Checksum: 1af8a1860
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+105 Infos, 38 Warnings, 44 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file red_pitaya_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file red_pitaya_top_utilization_placed.rpt -pb red_pitaya_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file red_pitaya_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-69.220 | TNS=-2031.512 |
+Phase 1 Physical Synthesis Initialization | Checksum: e99c608c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-69.220 | TNS=-2031.512 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: e99c608c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-69.220 | TNS=-2031.512 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[2]_i_6_n_0.  Did not re-place instance nolabel_line559/output_register[2]_i_6
+INFO: [Physopt 32-710] Processed net nolabel_line559/output_typeconvert[1]. Critical path length was reduced through logic transformation on cell nolabel_line559/output_register[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net nolabel_line559/output_register[2]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-69.210 | TNS=-2031.198 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[2]_i_6_n_0.  Did not re-place instance nolabel_line559/output_register[2]_i_6
+INFO: [Physopt 32-710] Processed net nolabel_line559/output_typeconvert[0]. Critical path length was reduced through logic transformation on cell nolabel_line559/output_register[0]_i_1_comp.
+INFO: [Physopt 32-735] Processed net nolabel_line559/output_register[2]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-69.065 | TNS=-2031.067 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[2]_i_6_n_0.  Did not re-place instance nolabel_line559/output_register[2]_i_6
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net nolabel_line559/output_register[12]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_2_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_2
+INFO: [Physopt 32-572] Net nolabel_line559/output_register[12]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_5_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_5
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_8_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[10]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_23[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_40_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[10]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[10]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_21[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_64_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_65_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[6]_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-69.020 | TNS=-2029.942 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_28_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_111_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_206_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_84_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[6]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_44_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_40_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_94_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_194_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_280_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_364_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_442_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[6]_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.934 | TNS=-2027.792 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_72_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_128_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_217_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_294_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_374_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_452_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[6]_i_26_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.762 | TNS=-2023.492 |
+INFO: [Physopt 32-702] Processed net output_register[6]_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_67_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_119_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_211_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_289_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_369_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_447_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_547_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[2]_i_641_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.615 | TNS=-2019.816 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_640_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_82_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_145_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_228_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_304_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_384_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_462_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_561_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[2]_i_649_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.530 | TNS=-2017.691 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_648_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_7_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_137_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_223_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_299_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_379_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_457_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_556_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[2]_i_645_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.390 | TNS=-2014.191 |
+INFO: [Physopt 32-702] Processed net output_register[2]_i_645_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_93[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_89_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_185_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_275_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_359_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_437_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_538_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_633_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_736_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_9_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_240_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_314_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_394_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_472_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_655_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[2]_i_745_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.243 | TNS=-2010.516 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_744_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_10_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_154_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_233_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_309_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_389_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_467_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_566_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_650_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net nolabel_line559/add_signext_36[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.093 | TNS=-2006.766 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_740_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_173_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_254_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_324_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_404_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_482_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_581_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_665_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[2]_i_753_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-68.028 | TNS=-2005.141 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_752_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_12_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_164_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_248_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_319_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_399_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_477_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_576_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_660_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net add_signext_32[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.931 | TNS=-2002.716 |
+INFO: [Physopt 32-702] Processed net add_signext_32[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_184_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_182_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_265_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_339_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_412_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_503_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_593_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_690_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_780_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_849_n_0.  Did not re-place instance output_register[2]_i_849
+INFO: [Physopt 32-735] Processed net output_register[2]_i_849_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.893 | TNS=-2001.766 |
+INFO: [Physopt 32-662] Processed net output_register[2]_i_849_n_0.  Did not re-place instance output_register[2]_i_849
+INFO: [Physopt 32-702] Processed net output_register[2]_i_849_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_330[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_274_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_348_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_512_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_602_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_699_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_782_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_856_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_911_n_0.  Did not re-place instance output_register[2]_i_911
+INFO: [Physopt 32-702] Processed net output_register[2]_i_911_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_488_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_410_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_434_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_525_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_615_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_712_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_795_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_858_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_411_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_502_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/add_signext_26[2].  Did not re-place instance nolabel_line559/output_register[2]_i_498
+INFO: [Physopt 32-710] Processed net nolabel_line559/output_register[2]_i_502_n_0. Critical path length was reduced through logic transformation on cell nolabel_line559/output_register[2]_i_502_comp.
+INFO: [Physopt 32-735] Processed net nolabel_line559/add_signext_26[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.855 | TNS=-2000.816 |
+INFO: [Physopt 32-662] Processed net nolabel_line559/add_signext_26[2].  Did not re-place instance nolabel_line559/output_register[2]_i_498
+INFO: [Physopt 32-572] Net nolabel_line559/add_signext_26[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net nolabel_line559/add_signext_26[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_16_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_587_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_628_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_725_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_808_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_871_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_920_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_590_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[2]_i_682_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.763 | TNS=-1998.517 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_969_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_687_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_683_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_755_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_821_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_881_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_933_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_972_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_754_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net output_register[2]_i_820_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.529 | TNS=-1992.667 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_819_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_18_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_764_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_826_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_886_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_938_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_977_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1015_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_880_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_931_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/O[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_765_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_837_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_20_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_841_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net nolabel_line559/output_register[2]_i_908_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.497 | TNS=-1991.867 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_908_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_896_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_988_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1075_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1072_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1107_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1127_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1145_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1202_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1198_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1222_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1250_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1249_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net nolabel_line559/output_register[2]_i_1273_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.442 | TNS=-1990.492 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1273_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_typeconvert[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_27_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net nolabel_line559/delay_pipeline_reg[2]_1[13] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13].  Did not re-place instance nolabel_line559/delay_pipeline_reg[2][13]
+INFO: [Physopt 32-572] Net nolabel_line559/delay_pipeline_reg[2]_1[13] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[2]_i_6_n_0.  Did not re-place instance nolabel_line559/output_register[2]_i_6
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_2_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_2
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_5_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_5
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_8_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_23[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[10]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_21[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_28_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[6]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_44_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_72_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[6]_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_67_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_640_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_82_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_648_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_7_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[2]_i_645_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_93[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_736_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_9_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_744_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_10_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_740_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_173_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_752_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_12_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net add_signext_32[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_184_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_780_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_849_n_0.  Did not re-place instance output_register[2]_i_849
+INFO: [Physopt 32-702] Processed net output_register[2]_i_849_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_330[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_856_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_911_n_0.  Did not re-place instance output_register[2]_i_911
+INFO: [Physopt 32-702] Processed net output_register[2]_i_911_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_488_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/add_signext_26[2].  Did not re-place instance nolabel_line559/output_register[2]_i_498
+INFO: [Physopt 32-702] Processed net nolabel_line559/add_signext_26[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_16_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_969_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_687_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_819_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_18_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_931_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/O[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_837_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_20_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_908_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_896_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_988_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1075_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1072_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1127_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1145_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1202_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1198_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1250_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1249_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1273_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_typeconvert[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_27_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13].  Did not re-place instance nolabel_line559/delay_pipeline_reg[2][13]
+INFO: [Physopt 32-702] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.442 | TNS=-1990.492 |
+Phase 3 Critical Path Optimization | Checksum: e99c608c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1708.191 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.442 | TNS=-1990.492 |
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[2]_i_6_n_0.  Did not re-place instance nolabel_line559/output_register[2]_i_6
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net nolabel_line559/output_register[12]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_2_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_2
+INFO: [Physopt 32-572] Net nolabel_line559/output_register[12]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_5_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_5
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_8_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[10]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_23[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_40_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[10]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[10]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_21[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_64_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_65_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_28_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_111_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_206_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_84_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[12]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[6]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_44_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_40_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_94_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_194_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_280_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_364_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_442_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_72_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_128_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_217_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_294_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_374_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_452_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[6]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[6]_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_67_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_119_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_211_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_289_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_369_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_447_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_547_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_640_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_82_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_145_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_228_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_304_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_384_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_462_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_561_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_648_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_7_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_137_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_223_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_299_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_379_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_457_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_556_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[2]_i_645_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_93[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_89_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_185_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_275_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_359_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_437_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_538_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_633_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_736_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_9_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_240_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_314_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_394_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_472_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_655_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_744_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_10_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_154_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_233_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_309_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_389_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_467_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_566_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_650_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_740_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_173_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_254_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_324_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_404_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_482_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_581_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_665_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_752_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_12_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_164_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_248_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_319_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_399_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_477_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_576_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_660_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net add_signext_32[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_184_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_182_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_265_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_339_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_412_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_503_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_593_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_690_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_780_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_849_n_0.  Did not re-place instance output_register[2]_i_849
+INFO: [Physopt 32-702] Processed net output_register[2]_i_849_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_330[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_274_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_348_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_512_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_602_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_699_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_782_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_856_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_911_n_0.  Did not re-place instance output_register[2]_i_911
+INFO: [Physopt 32-702] Processed net output_register[2]_i_911_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_488_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_410_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_434_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_525_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_615_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_712_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_795_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_858_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_411_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/add_signext_26[2].  Did not re-place instance nolabel_line559/output_register[2]_i_498
+INFO: [Physopt 32-572] Net nolabel_line559/add_signext_26[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net nolabel_line559/add_signext_26[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_16_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_587_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_628_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_725_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_808_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_871_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_920_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_969_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_687_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_683_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_755_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_821_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_881_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_933_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_972_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_754_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_819_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_18_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_764_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_826_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_886_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_938_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_977_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1015_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_880_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_931_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/O[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_765_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_837_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_20_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_841_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_908_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_896_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_988_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1075_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1072_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1107_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1127_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1145_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1202_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1198_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1222_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1250_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1249_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1273_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_typeconvert[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_27_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net nolabel_line559/delay_pipeline_reg[2]_1[13] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13].  Did not re-place instance nolabel_line559/delay_pipeline_reg[2][13]
+INFO: [Physopt 32-572] Net nolabel_line559/delay_pipeline_reg[2]_1[13] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[2]_i_6_n_0.  Did not re-place instance nolabel_line559/output_register[2]_i_6
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_2_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_2
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/output_register[12]_i_5_n_0.  Did not re-place instance nolabel_line559/output_register[12]_i_5
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[12]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[13]_i_8_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_23[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[10]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_21[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_28_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[6]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_44_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[6]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_72_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[6]_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_67_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_640_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_82_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_648_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_7_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net output_register[2]_i_645_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_93[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_736_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_9_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_744_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_10_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_740_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_173_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_752_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_12_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net add_signext_32[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_184_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_780_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_849_n_0.  Did not re-place instance output_register[2]_i_849
+INFO: [Physopt 32-702] Processed net output_register[2]_i_849_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_330[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_856_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net output_register[2]_i_911_n_0.  Did not re-place instance output_register[2]_i_911
+INFO: [Physopt 32-702] Processed net output_register[2]_i_911_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_488_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/add_signext_26[2].  Did not re-place instance nolabel_line559/output_register[2]_i_498
+INFO: [Physopt 32-702] Processed net nolabel_line559/add_signext_26[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_16_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_969_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_687_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_819_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_18_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_931_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/O[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_837_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_20_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_908_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_896_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_988_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1075_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1072_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1127_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1145_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1202_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1198_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1250_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register_reg[2]_i_1249_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_register[2]_i_1273_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/output_typeconvert[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nolabel_line559/mul_temp_27_n_105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13].  Did not re-place instance nolabel_line559/delay_pipeline_reg[2][13]
+INFO: [Physopt 32-702] Processed net nolabel_line559/delay_pipeline_reg[2]_1[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-67.442 | TNS=-1990.492 |
+Phase 4 Critical Path Optimization | Checksum: e99c608c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-67.442 | TNS=-1990.492 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.778  |         41.020  |            0  |              0  |                    18  |           0  |           2  |  00:00:09  |
+|  Total          |          1.778  |         41.020  |            0  |              0  |                    18  |           0  |           3  |  00:00:09  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1708.191 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1dd3f05c0
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+769 Infos, 38 Warnings, 44 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1708.191 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][10] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][11] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][12] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][13] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][14] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][15] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][2] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][3] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][4] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][5] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][6] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][7] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][8] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[0][9] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][10] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][11] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][12] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][13] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][14] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][15] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][3] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][4] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][5] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][6] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][7] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][8] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC PLIO-8] Placement Constraints Check for IO constraints: Terminal adc_dat_i[1][9] has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 27 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: eec3dd1a ConstDB: 0 ShapeSum: c79f2594 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 15dce61a9
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1714.168 ; gain = 5.977
+Post Restoration Checksum: NetGraph: 63c9d83f NumContArr: fa04896a Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 15dce61a9
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1714.168 ; gain = 5.977
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 15dce61a9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1722.051 ; gain = 13.859
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 15dce61a9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1722.051 ; gain = 13.859
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 26359ce3f
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 1751.453 ; gain = 43.262
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-65.668| TNS=-1910.565| WHS=-0.294 | THS=-153.513|
+
+Phase 2 Router Initialization | Checksum: 1f44d8fbe
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 1785.223 ; gain = 77.031
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00506757 %
+  Global Horizontal Routing Utilization  = 0.00252757 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 13605
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 13603
+  Number of Partially Routed Nets     = 2
+  Number of Node Overlaps             = 1
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 7fabb3a7
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 1785.531 ; gain = 77.340
+INFO: [Route 35-580] Design has 9 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              pll_adc_clk |              pll_adc_clk |                                                                                   i_hk/sys_rdata_reg[2]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                                   i_hk/sys_rdata_reg[6]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                                   i_hk/sys_rdata_reg[1]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                                   i_hk/sys_rdata_reg[4]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                         i_scope/i_wr0/axi_wlen_o_reg[1]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1664
+ Number of Nodes with overlaps = 332
+ Number of Nodes with overlaps = 82
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-70.594| TNS=-20293.710| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1c1c2f99b
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:41 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1355
+ Number of Nodes with overlaps = 361
+ Number of Nodes with overlaps = 49
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-72.967| TNS=-20782.934| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 202233a70
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 1785.531 ; gain = 77.340
+Phase 4 Rip-up And Reroute | Checksum: 202233a70
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 2164cb2d3
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:52 . Memory (MB): peak = 1785.531 ; gain = 77.340
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-70.594| TNS=-20039.404| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1600c5722
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:52 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1600c5722
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:52 . Memory (MB): peak = 1785.531 ; gain = 77.340
+Phase 5 Delay and Skew Optimization | Checksum: 1600c5722
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:52 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1788c83c9
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:53 . Memory (MB): peak = 1785.531 ; gain = 77.340
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-70.589| TNS=-20038.360| WHS=-0.511 | THS=-4.679 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 20714950f
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:53 . Memory (MB): peak = 1785.531 ; gain = 77.340
+Phase 6 Post Hold Fix | Checksum: 1d5eedcb7
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:53 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 8.61796 %
+  Global Horizontal Routing Utilization  = 10.9164 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 54.0541%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 56.7568%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1906ff8ab
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:53 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1906ff8ab
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:53 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: b29876a9
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:55 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 9bb56101
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:56 . Memory (MB): peak = 1785.531 ; gain = 77.340
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-70.589| TNS=-20038.360| WHS=0.050  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 9bb56101
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:56 . Memory (MB): peak = 1785.531 ; gain = 77.340
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:56 . Memory (MB): peak = 1785.531 ; gain = 77.340
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+788 Infos, 66 Warnings, 44 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:01 ; elapsed = 00:00:59 . Memory (MB): peak = 1785.531 ; gain = 77.340
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1785.531 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file red_pitaya_top_drc_routed.rpt -pb red_pitaya_top_drc_routed.pb -rpx red_pitaya_top_drc_routed.rpx
+Command: report_drc -file red_pitaya_top_drc_routed.rpt -pb red_pitaya_top_drc_routed.pb -rpx red_pitaya_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file red_pitaya_top_methodology_drc_routed.rpt -pb red_pitaya_top_methodology_drc_routed.pb -rpx red_pitaya_top_methodology_drc_routed.rpx
+Command: report_methodology -file red_pitaya_top_methodology_drc_routed.rpt -pb red_pitaya_top_methodology_drc_routed.pb -rpx red_pitaya_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Ian/Desktop/OIST/RedPitaya/RedPitaya-FilterTest/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1847.934 ; gain = 43.219
+INFO: [runtcl-4] Executing : report_power -file red_pitaya_top_power_routed.rpt -pb red_pitaya_top_power_summary_routed.pb -rpx red_pitaya_top_power_routed.rpx
+Command: report_power -file red_pitaya_top_power_routed.rpt -pb red_pitaya_top_power_summary_routed.pb -rpx red_pitaya_top_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for i_DNA
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+801 Infos, 67 Warnings, 44 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1848.137 ; gain = 0.203
+INFO: [runtcl-4] Executing : report_route_status -file red_pitaya_top_route_status.rpt -pb red_pitaya_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file red_pitaya_top_timing_summary_routed.rpt -pb red_pitaya_top_timing_summary_routed.pb -rpx red_pitaya_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file red_pitaya_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file red_pitaya_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file red_pitaya_top_bus_skew_routed.rpt -pb red_pitaya_top_bus_skew_routed.pb -rpx red_pitaya_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 21 15:18:18 2023...

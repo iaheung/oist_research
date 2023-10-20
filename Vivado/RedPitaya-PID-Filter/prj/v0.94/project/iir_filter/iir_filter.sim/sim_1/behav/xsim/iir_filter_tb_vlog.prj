@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../../../../MATLAB/Filters/hdlsrc/matlab_IIR.v" \
+"../../../../../../../../../../MATLAB/Filters/hdlsrc/iir_filter_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

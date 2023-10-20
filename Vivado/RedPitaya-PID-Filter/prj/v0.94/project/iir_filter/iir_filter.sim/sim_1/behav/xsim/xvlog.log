@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ian/Desktop/OIST/MATLAB/Filters/hdlsrc/fir_821_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_821_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ian/Desktop/OIST/MATLAB/Filters/hdlsrc/fir_821_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_821_2_tb
