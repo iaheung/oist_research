@@ -12,57 +12,65 @@ Vivado is a software that is used for FPGA programming. The version that is requ
    - Additionally, follow the installation instructions on the [Red Pitaya website](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga1.html).
    - Depending on your OS, you might need to install certain packages.
 
-
 2. **RedPitaya-FPGA-Master.zip**:
    - Download from the shared folder on Microsoft Teams (Documents/Rotation+Interns/IanHeung).
    - Move the folder to an easily accessible location.
-   
-   > **Note**: You can also download from [this](https://github.com/RedPitaya/RedPitaya-FPGA) repository as a ZIP file and extract it onto your computer. Be aware, the version in the shared folder might differ from the one on GitHub. This framework is essential to create a Red Pitaya project on Vivado. For those familiar with git, you can clone the GitHub repository. For more details, visit [this website](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga2.html).
+
+   > **Note**: You can also download from [this repository](https://github.com/RedPitaya/RedPitaya-FPGA) as a ZIP file and extract it onto your computer. The version in the shared folder might differ from the one on GitHub. This framework is essential to create a Red Pitaya project on Vivado. For those familiar with git, you can clone the GitHub repository. More details can be found on [this website](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga2.html).
 
 3. **Creating a Vivado Project**:
-   - After installing Vivado and its dependencies, launch Vivado. You'll be greeted with the initial screen.
-   
+   - After installing Vivado and its dependencies, launch Vivado. You'll be greeted by the initial screen.
      ![Vivado Initial Screen](assets/vivado.png)
-     
-   - At the bottom, you should see the TCL console. Use this console to type the following commands to initiate a Red Pitaya project:
-   
+   - At the bottom, you'll find the TCL console. Use this console to input the commands below to initiate a Red Pitaya project:
      ```bash
      cd /path/to/folder/RedPitaya-FPGA-master
      cmd /c "C:\Xilinx\Vivado\2020.1\settings64.sh"
      make project PRJ=v0.94 MODEL=Z10
      ```
 
-   > **Note**: Instead of creating a project through the GUI, we utilize these commands to ensure all the modules within the Red Pitaya are incorporated.
+   > **Note**: Rather than creating a project via the GUI, we use these commands to ensure all the modules within the Red Pitaya are included.
 
-4. When you execute the provided commands, a new instance of Vivado should start, and the Red Pitaya project will be loaded. Once the project has loaded, you should find a file named `red_pitaya_top` in the **Sources** tab. This will be the primary file you'll be working with when modifying connections and adding or removing modules.
+4. **red_pitaya_top.sv**
+   - When you execute the above commands, a new instance of Vivado should launch and load the Red Pitaya project. 
+   - Once loaded, you should see a file named `red_pitaya_top` in the **Sources** tab, which will be your main file when tweaking connections or adding/removing modules.
+   ![Sources Tab](assets/sources.png)
 
-![Sources Tab](assets/sources.png)
+5. **RTL Analysis**
+   - On the left, there's an **RTL Analysis** section.
+   - Clicking on it will show a visual schematic of the design, helping you understand how different modules connect.
+   ![RTL Analysis](assets/rtl.png)
+   ![Schematic](assets/schematic.png)
 
-5. On the left side, there's a section titled **RTL Analysis**. Clicking this will provide a visual schematic of the design, offering an easier understanding of how different modules are interconnected. 
+6. **Adding Design Sources** 
+   - To include new design sources, press the "Add Sources" button.
+   - If you're using the MATLAB HDL coder, this is where you'd incorporate extra modules.
+   ![Add Sources](assets/addsources.png)
 
-![RTL Analysis](assets/rtl.png)
-![Schematic](assets/schematic.png)
-
-6. To add new design sources, click on the "Add Sources" button. If you're utilizing the MATLAB HDL coder, this is where you'd import additional modules.
-
-![Add Sources](assets/addsources.png)
-
-7. After incorporating all sources and making necessary changes in the code, click "Generate Bitstream" on the left. This will produce the bitstream file for uploading to the Red Pitaya.
-
-![Generate Bitstream](assets/generatebitstream.png)
+7. **Generate Bitstream** 
+   - Once all sources are added and necessary modifications are made in the code, click on "Generate Bitstream" to the left.
+   - This will generate the bitstream file for uploading to the Red Pitaya.
+   ![Generate Bitstream](assets/generatebitstream.png)
 
 ## Transferring the Bitstream to Red Pitaya
 
-1.**Locate Bitstream file**
-- After the bitstream generation, locate the bitstream file on your device. This should typically be located at a path similar to: `C:\Users\[YourUsername]\Desktop\RedPitaya-FPGA-master\[project_name]\red_pitaya_top.bit`
+1. **Locate Bitstream File**:
+   - Post bitstream creation, find the bitstream file on your computer.
+   - Typically, its location resembles: `C:\Users\[YourUsername]\Desktop\RedPitaya-FPGA-master\[project_name]\red_pitaya_top.bit`
 
-2. Use terminal commands to upload the bitstream file to the Red Pitaya. Open two command prompts; one will establish an SSH connection to the Red Pitaya, while the other will transfer the bitstream.
+2. **Using Another Command Prompt Window**
+   - Use terminal commands to send the bitstream file to Red Pitaya.
+   - Launch two command prompts: one for setting up an SSH connection to Red Pitaya, the other for transferring the bitstream.
 
-3. Connect to the Red Pitaya with the following command:
-```ssh root@your.ip.static.address```
+3. **Connecting to Red Pitaya**
+   - Connect to the Red Pitaya via this command:
+   ```bash
+   ssh root@your.ip.static.address
+   ```
+   
 Note: Use the static IP address you've set previously. After a successful connection, you'll need to provide the password (default is `root`).
 
-4. After establishing an SSH connection, use the following command to grant write permissions:
+4. **Write Permissions** 
+   - After establishing an SSH connection, use the following command to grant write permissions:
 ```rw```
 
 You can navigate the Red Pitaya's directory structure to ensure the correct location for the bitstream.
@@ -82,4 +90,4 @@ You can navigate the Red Pitaya's directory structure to ensure the correct loca
    - You will be prompted to enter the Red Pitaya password again. Once done, the bitstream file should have transferred successfully.
 
 ## Additional Resources
-   - For more information about using Vivado and transferring the bitstream file, check out [this link](#) on the Red Pitaya official documentation website. (Note: replace `#` with the actual link)
+   - For more information about using Vivado and transferring the bitstream file, check out [this link](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga2.html) on the Red Pitaya official documentation website. (Note: replace `#` with the actual link)
