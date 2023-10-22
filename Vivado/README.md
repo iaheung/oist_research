@@ -5,18 +5,19 @@ Vivado is a software that is used for FPGA programming. The version that is requ
 ## Installation and Setup
 
 1. **Vivado Installation**:
+   - Create a [Xilinx account](https://www.amd.com/en/registration/create-account.html).
    - Required Version: Vivado 2020.1.
-   - [Download Page](#) (Replace `#` with the actual link).
+   - [Download Page](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html)
    - Download the installer and follow the setup instructions.
-   - Additionally, follow the installation instructions on the [Red Pitaya website](#) (Replace `#` with the actual link).
+   - Additionally, follow the installation instructions on the [Red Pitaya website](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga1.html).
    - Depending on your OS, you might need to install certain packages.
-   - Create a [Xilinx account](#) (Replace `#` with the actual link).
+
 
 2. **RedPitaya-FPGA-Master.zip**:
    - Download from the shared folder on Microsoft Teams (Documents/Rotation+Interns/IanHeung).
    - Move the folder to an easily accessible location.
    
-   > **Note**: You can also download from this repository as a ZIP file and extract it onto your computer. Be aware, the version in the shared folder might differ from the one on GitHub. This framework is essential to create a Red Pitaya project on Vivado. For those familiar with git, you can clone the GitHub repository. For more details, visit [this website](#) (Replace `#` with the actual link).
+   > **Note**: You can also download from [this](https://github.com/RedPitaya/RedPitaya-FPGA) repository as a ZIP file and extract it onto your computer. Be aware, the version in the shared folder might differ from the one on GitHub. This framework is essential to create a Red Pitaya project on Vivado. For those familiar with git, you can clone the GitHub repository. For more details, visit [this website](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga2.html).
 
 3. **Creating a Vivado Project**:
    - After installing Vivado and its dependencies, launch Vivado. You'll be greeted with the initial screen.
