@@ -2,11 +2,13 @@
 
 To generate HDL code for FIR and IIR filters, there are two addons you will need to use, but I recommend installing all these addons since they will all be useful for HDL programming and filter design.
 
+![Add-Ons Screenshot](assets/reqaddons.png)
+
 ## Instructions
 
 1. Assuming you have properly installed an approved version of MATLAB, launch MATLAB and install the list of addons from the above image through the "Add-Ons" button in the top task bar.
 
-![Add-Ons Screenshot](assets/reqaddons.png)
+![Add-Ons Screenshot](assets/addons.png)
 
 2. Once all the addons have been installed properly, start up the filter designer by entering `filterDesigner` into the command window on MATLAB.
 
