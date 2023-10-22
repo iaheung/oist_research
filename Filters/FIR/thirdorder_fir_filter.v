@@ -1,6 +1,13 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: Ian Heung
+// 
+// Create Date: 08/14/2023
+// Module Name: thirdorder_fir_2
+// Project Name: Red Pitaya MATLAB Third Order FIR Filter
+//////////////////////////////////////////////////////////////////////////////////
 
-module complex_fir_filter(d_out,x,clk,reset,valid);
+module thirdorder_fir_2(d_out,x,clk,reset,valid);
     output signed[15:0] d_out;
     input signed [15:0] x;
     input clk,reset,valid;

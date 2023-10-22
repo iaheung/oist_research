@@ -48,6 +48,9 @@
  *
  * Daisy chain connects with other boards with fast serial link. Data which is
  * send and received is at the moment undefined. This is left for the user.
+ * 
+ * Two Filters are implemented between ASG, PID, and SCOPE modules for signal
+ * background suppression.
  */
 
 
@@ -533,12 +536,11 @@ red_pitaya_asg i_asg (
   .sys_ack         (sys[2].ack  )
 );
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ////////////////////////////////////////////////////////////////////////////////
 //  FIRST ORDER FIR FILTER (CHANNEL 1)
 ////////////////////////////////////////////////////////////////////////////////
 
-ma_fir_filter(
+firstorder_fir_1(
     
     .clk           (adc_clk   ),
     .rst           (adc_rstn  ),
@@ -548,17 +550,16 @@ ma_fir_filter(
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//  MATLAB GENERATED FIR FILTER (CHANNEL 2)
+//  THIRD ORDER FIR FILTER (CHANNEL 2)
 ////////////////////////////////////////////////////////////////////////////////
 
-fir_821_3(
+thirdorder_fir_2(
     .clk                (adc_clk   ),
     .clk_enable         (1'b1      ),
     .reset              (adc_rstn  ),
     .filter_in          (adc_dat[0]),
     .filter_out         (filt_dat_0  )
 );
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ////////////////////////////////////////////////////////////////////////////////
 //  MIMO PID controller
@@ -568,8 +569,8 @@ red_pitaya_pid i_pid (
   // signals
  .clk_i           (adc_clk   ),  // clock
  .rstn_i          (adc_rstn  ),  // reset - active low
- .dat_a_i         (filt_dat_0  ),  // in 1   // !! Port changed from adc_dat[0] to filt_dat0
- .dat_b_i         (filt_dat_1),  // in 2     // !! Port changed from adc_dat[1] to filt_dat1
+ .dat_a_i         (filt_dat_0  ),  // in 1  
+ .dat_b_i         (filt_dat_1),  // in 2     
  .dat_a_o         (pid_dat[0]),  // out 1
  .dat_b_o         (pid_dat[1]),  // out 2
  // System bus
