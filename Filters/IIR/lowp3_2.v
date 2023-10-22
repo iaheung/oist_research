@@ -1,22 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Engineer: Ian Heung
 // 
 // Create Date:    12:57:28 11/23/2016 
-// Design Name: 
+// Design Name: lowp3_2
 // Module Name:    lowp2 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
+// Project Name: Red Pitaya IIR Filter
 //////////////////////////////////////////////////////////////////////////////////
 module lowp3_2(signal_in,signal_out, clock_in,reset,enable);
 
