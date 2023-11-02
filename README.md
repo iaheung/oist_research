@@ -9,7 +9,7 @@ I was assigned a project to implement a PID controller and digital filters to co
 The main file I used is `red_pitaya_top.sv`. I adapted the original file from the following [repo](https://github.com/RedPitaya/RedPitaya-FPGA) for programming the Red Pitaya FPGA. The `red_pitaya_top.sv` file is also in the Vivado folder, but I put it in the root directory of this repo for ease of access. The PID control module is implemented in the file. More details are discussed in the Vivado folder.
 
 ### Filters
-This folder contains the filters I designed for the PID controller. There are FIR and IIR filters, and also filters I created on MATLAB.
+This folder contains the filters I designed for the PID controller. There are FIR and IIR filters, and also filters I created on MATLAB. Please navigate to the **MATLAB** folder within the **Filters** folder for instructions on how to use the filters.
 
 ### Vivado
 The software I used for writing the Verilog code onto the FPGA of the Red Pitaya is called Xilinx Vivado. In this folder, there is a folder called **RedPitaya-PID-Filter**, which contains all the necessary files for use in Vivado to upload a bitstream file onto the Red Pitaya FPGA. Instructions are also listed in the README file in this folder.
